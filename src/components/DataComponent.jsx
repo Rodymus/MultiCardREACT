@@ -5,9 +5,11 @@ const DataComponent = ({ data, onCardClick }) => {
     <div>
       {data.map((item) => (
         <div key={item.id} className="card" onClick={() => onCardClick(item.id)}>
-          <h3>{item.name}</h3>
+          <h3>{item.title}</h3>
           <p>{item.description}</p>
+          <img src={item.img} alt="Logo" />
         </div>
+        
       ))}
     </div>
   );

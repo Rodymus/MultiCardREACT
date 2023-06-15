@@ -9,7 +9,9 @@ const SingleCardComponent = ({ selectedCard, onReturnClick }) => {
     <div className="card">
       <h3>{selectedCard.name}</h3>
       <p>{selectedCard.description}</p>
-      <button onClick={onReturnClick}>Return to All Cards</button>
+      <img src={selectedCard.img} />
+
+      <button onClick={onReturnClick}>Regresar al menú</button>
     </div>
   );
 };
